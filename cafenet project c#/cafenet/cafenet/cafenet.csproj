@@ -1,0 +1,299 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{057454DF-A849-428C-8835-60090584F3F6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>cafenet</RootNamespace>
+    <AssemblyName>cafenet</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="aboute.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="aboute.Designer.cs">
+      <DependentUpon>aboute.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addlogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addlogin.Designer.cs">
+      <DependentUpon>addlogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cafe_netDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cafe_netDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Cafe_netDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cafe_netDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="editlogins.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editlogins.Designer.cs">
+      <DependentUpon>editlogins.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addservice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addservice.Designer.cs">
+      <DependentUpon>addservice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addusers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addusers.Designer.cs">
+      <DependentUpon>addusers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cafe_netDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cafe_netDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Cafe_netDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cafe_netDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Cafe_netDataSet3.cs" />
+    <Compile Include="Cafe_netDataSet3TableAdapters.cs" />
+    <Compile Include="Editlogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Editlogin.Designer.cs">
+      <DependentUpon>Editlogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="editservice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editservice.Designer.cs">
+      <DependentUpon>editservice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="editusers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editusers.Designer.cs">
+      <DependentUpon>editusers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="main.cs" />
+    <Compile Include="menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menu.Designer.cs">
+      <DependentUpon>menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rservice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rservice.Designer.cs">
+      <DependentUpon>Rservice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rusers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rusers.Designer.cs">
+      <DependentUpon>Rusers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="service.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="service.Designer.cs">
+      <DependentUpon>service.cs</DependentUpon>
+    </Compile>
+    <Compile Include="users.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="users.Designer.cs">
+      <DependentUpon>users.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="aboute.resx">
+      <DependentUpon>aboute.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addlogin.resx">
+      <DependentUpon>addlogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editlogins.resx">
+      <DependentUpon>editlogins.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addservice.resx">
+      <DependentUpon>addservice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addusers.resx">
+      <DependentUpon>addusers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editlogin.resx">
+      <DependentUpon>Editlogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editservice.resx">
+      <DependentUpon>editservice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editusers.resx">
+      <DependentUpon>editusers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menu.resx">
+      <DependentUpon>menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="Report2.rdlc" />
+    <EmbeddedResource Include="Rservice.resx">
+      <DependentUpon>Rservice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rusers.resx">
+      <DependentUpon>Rusers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="service.resx">
+      <DependentUpon>service.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="users.resx">
+      <DependentUpon>users.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Cafe_netDataSet.xsc">
+      <DependentUpon>Cafe_netDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Cafe_netDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Cafe_netDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Cafe_netDataSet.xss">
+      <DependentUpon>Cafe_netDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Cafe_netDataSet1.xsc">
+      <DependentUpon>Cafe_netDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Cafe_netDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Cafe_netDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Cafe_netDataSet1.xss">
+      <DependentUpon>Cafe_netDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Cafe_netDataSet2.xsc">
+      <DependentUpon>Cafe_netDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Cafe_netDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Cafe_netDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Cafe_netDataSet2.xss">
+      <DependentUpon>Cafe_netDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Cafe_netDataSet3.xsc">
+      <DependentUpon>Cafe_netDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Cafe_netDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Cafe_netDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Cafe_netDataSet3.xss">
+      <DependentUpon>Cafe_netDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a62c849603e96000.jpg" />
+    <None Include="Resources\DSC01220.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trash.png" />
+    <None Include="Resources\database.png" />
+    <None Include="Resources\cogwheel.png" />
+    <None Include="Resources\chart.png" />
+    <None Include="Resources\remove1.png" />
+    <None Include="Resources\remove.png" />
+    <None Include="Resources\light_bulb.png" />
+    <None Include="Resources\battery_full.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Cafe net.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\images.jpg" />
+    <None Include="Resources\cafe_net_logo_internet_services_by_erik_rojas_by_teemakers-d5jl92o.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
